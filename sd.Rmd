@@ -1,6 +1,6 @@
 ## Varianza muestral y desviación típica muestral {#sd}
 
-Dadas $n$ observaciones $x_1$, $x_2$, $x_n$ de una variable aleatoria continua $X$, su **varianza muestral** se define como 
+Dadas $n$ observaciones $x_1$, $x_2$, $\dots$,  $x_n$ de una variable aleatoria continua $X$, su **varianza muestral** se define como 
 $$
     s^2 = \frac{(x_1-\bar{x})^2 + (x_2-\bar{x})^2 + \dots + (x_n-\bar{x})^2}{n-1}
 $$

@@ -26,6 +26,7 @@ En el archivo enlazado a continuación se registran los radios de alcance de los
 
 En esta práctica exploraremos qué conclusiones o inferencias podemos realizar sobre el parámetro desconocido $\mu$, a partir de las $100$ mediciones realizadas. 
 
+***
 
 Comenzamos cargando el paquete `tidyverse` para tener acceso a todas las funciones que usaremos:
 
@@ -33,11 +34,9 @@ Comenzamos cargando el paquete `tidyverse` para tener acceso a todas las funcion
 library("tidyverse")
 ```
 
+***
 
-
-## Importación de los datos
-
-Importamos el archivo `mandos.csv` con los datos del problema
+Importamos  los datos del problema con la instrucción
 ```{r}
 mandos <- read_csv("data/mandos.csv")
 ```

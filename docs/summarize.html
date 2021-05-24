@@ -155,10 +155,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">Inferencias sobre una media</a></li>
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i>Introducción</a></li>
-<li class="chapter" data-level="1" data-path="problem.html"><a href="problem.html"><i class="fa fa-check"></i><b>1</b> Planteamiento del problema</a>
-<ul>
-<li class="chapter" data-level="1.1" data-path="importación-de-los-datos.html"><a href="importación-de-los-datos.html"><i class="fa fa-check"></i><b>1.1</b> Importación de los datos</a></li>
-</ul></li>
+<li class="chapter" data-level="1" data-path="problem.html"><a href="problem.html"><i class="fa fa-check"></i><b>1</b> Planteamiento del problema</a></li>
 <li class="chapter" data-level="2" data-path="descriptive.html"><a href="descriptive.html"><i class="fa fa-check"></i><b>2</b> Estadística descriptiva</a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="mean.html"><a href="mean.html"><i class="fa fa-check"></i><b>2.1</b> Media muestral</a></li>
@@ -214,10 +211,9 @@ Publicado con <a style="display:inline;padding:0px;" href="https://pages.github.
 <span id="cb11-7"><a href="summarize.html#cb11-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;3er cuartil&quot;</span> <span class="ot">=</span> <span class="fu">quantile</span>(alcance, <span class="fl">0.75</span>)</span>
 <span id="cb11-8"><a href="summarize.html#cb11-8" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
 <pre class="egitbook-output"><code># A tibble: 1 x 5
-Media `Desv. estandar` `1er cuartil` Mediana `3er
-cuartil`
-&lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-1 48.9 7.55 44.5 49.5 54.7</code></pre>
+  Media `Desv. estandar` `1er cuartil` Mediana `3er cuartil`
+  &lt;dbl&gt;            &lt;dbl&gt;         &lt;dbl&gt;   &lt;dbl&gt;         &lt;dbl&gt;
+1  48.9             7.55          44.5    49.5          54.7</code></pre>
 <p>El valor <code>mandos</code> del primer argumento <code>.data</code> indica la hoja de datos en la que se encuentran las variables de interés. En el resto de argumentos se especifican los estadísticos para resumir los datos que se quieren calcular. Por ejemplo, el argumento <code>"Media" = mean(alcance)</code> en nuestro ejemplo solicita calcular la media de la variable <code>alcance</code> y le asigna el nombre <code>"Media"</code>. Las variables de la hoja de datos pueden usarse escribiendo solo su nombre (escribiendo solo <code>alcance</code> en lugar de <code>mandos$alcance</code>). La salida se organiza como una nueva hoja de datos, con una columna con el valor de cada estadístico pedido, rotulada con el nombre que se haya indicado.</p>
 <p><strong>Nota:</strong> La función <code>kable()</code> del paquete <code>knitr</code> imprime hojas de datos, como la que devuelve el comando <code>summarize()</code>, en un formato de tabla adecuado para el documento de salida. Aplicada a la salida de la instrucción anterior quedaría:</p>
 <table>

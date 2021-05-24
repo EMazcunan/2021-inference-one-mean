@@ -11,7 +11,7 @@ xbar <- .Last.value
 La expresión `mandos$alcance` extrae la variable `alcance` de la hoja de datos `mandos` y la función `mean()` calcula el promedio del vector resultante. 
 
 
-En general, dadas $n$ observaciones $x_1$, $x_2$, $x_n$ de una variable aleatoria continua $X$ la cantidad
+En general, dadas $n$ observaciones $x_1$, $x_2$, $\dots$, $x_n$ de una variable aleatoria continua $X$ la cantidad
 $$
     \bar{x} = \frac{x_1 + x_2 + \dots + x_n}{n}
 $$

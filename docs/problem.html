@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="intro.html"/>
-<link rel="next" href="importación-de-los-datos.html"/>
+<link rel="next" href="descriptive.html"/>
 <script src="libs/header-attrs-2.8.3/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -155,10 +155,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">Inferencias sobre una media</a></li>
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i>Introducción</a></li>
-<li class="chapter" data-level="1" data-path="problem.html"><a href="problem.html"><i class="fa fa-check"></i><b>1</b> Planteamiento del problema</a>
-<ul>
-<li class="chapter" data-level="1.1" data-path="importación-de-los-datos.html"><a href="importación-de-los-datos.html"><i class="fa fa-check"></i><b>1.1</b> Importación de los datos</a></li>
-</ul></li>
+<li class="chapter" data-level="1" data-path="problem.html"><a href="problem.html"><i class="fa fa-check"></i><b>1</b> Planteamiento del problema</a></li>
 <li class="chapter" data-level="2" data-path="descriptive.html"><a href="descriptive.html"><i class="fa fa-check"></i><b>2</b> Estadística descriptiva</a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="mean.html"><a href="mean.html"><i class="fa fa-check"></i><b>2.1</b> Media muestral</a></li>
@@ -220,8 +217,15 @@ Publicado con <a style="display:inline;padding:0px;" href="https://pages.github.
 la media o valor esperado de la variable <span class="math inline">\(X\)</span>.</p>
 <p>En el archivo enlazado a continuación se registran los radios de alcance de los <span class="math inline">\(100\)</span> mandos analizados: <a href="https://drive.google.com//uc?export=download&amp;id=1RGAPpTJJnTpj9R4jpZ5TO3u1t1RUgkJK">mandos.csv</a>. En el resto de la práctica se asume que el archivo <code>mandos.csv</code> está ubicado en un directorio de nombre <code>data</code> dentro del directorio en el que se encuentre el archivo <code>.Rmd</code> con el código.</p>
 <p>En esta práctica exploraremos qué conclusiones o inferencias podemos realizar sobre el parámetro desconocido <span class="math inline">\(\mu\)</span>, a partir de las <span class="math inline">\(100\)</span> mediciones realizadas.</p>
+<hr />
 <p>Comenzamos cargando el paquete <code>tidyverse</code> para tener acceso a todas las funciones que usaremos:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="problem.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
+<hr />
+<p>Importamos los datos del problema con la instrucción</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="problem.html#cb2-1" aria-hidden="true" tabindex="-1"></a>mandos <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;data/mandos.csv&quot;</span>)</span></code></pre></div>
+<p>que creará la hoja de datos <code>mandos</code> con los contenidos del archivo <code>mandos.csv</code>.</p>
+<p>Al visualizar el objeto <code>mandos</code> recién creado (desde la pestaña Environment) verás que tiene una única variable, de nombre <code>alcance</code>, en la que se registra el radio de alcance medido para cada uno de los <span class="math inline">\(100\)</span> mandos analizados.</p>
+
 </div>
 
             </section>
@@ -230,7 +234,7 @@ la media o valor esperado de la variable <span class="math inline">\(X\)</span>.
         </div>
       </div>
 <a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="importación-de-los-datos.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="descriptive.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
