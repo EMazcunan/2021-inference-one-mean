@@ -73,7 +73,7 @@ knit_hooks$set(output = function(x, options) {
 })
 # default
 knitr::opts_chunk$set(
-    linewidth = 60
+    linewidth = 65
 )
 ```
 
