@@ -1,0 +1,8 @@
+# Introducción {#intro .unnumbered}
+
+En el tema **Inferencia Estadística** se estudiaron los fundamentos de las principales técnicas de inferencia estadística: los contrastes de hipótesis y los intervalos de confianza. Se presentaron los nuevos conceptos partiendo del caso particular de un problema de inferencia para una **proporción**. 
+
+En esta práctica se aplicarán las mencionadas técnicas para realizar inferencias sobre un nuevo parámetro: la **media** de una variable continua.  Se requiere por tanto haber estudiado el  tema de inferencia estadística antes de realizar esta práctica.
+
+
+Antes de comenzar la práctica, se recomienda crear un archivo **R Markdown** para practicar el código que se presenta a lo largo de la misma y documentarlo. Dicho archivo servirá posteriormente de plantilla para la realización de la tarea de evaluación asociada, en la que se pedirá resolver un problema muy similar al que se trabaja en este documento. 
