@@ -210,7 +210,7 @@ Publicado con <a style="display:inline;padding:0px;" href="https://pages.github.
 <span id="cb15-6"><a href="boxplot.html#cb15-6" aria-hidden="true" tabindex="-1"></a>    )</span>
 <span id="cb15-7"><a href="boxplot.html#cb15-7" aria-hidden="true" tabindex="-1"></a>) <span class="sc">+</span></span>
 <span id="cb15-8"><a href="boxplot.html#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_boxplot</span>()</span></code></pre></div>
-<p><img src="Practica2-one_mean_files/figure-html/unnamed-chunk-29-1.png" width="80%" style="display: block; margin: auto;" /></p>
+<p><img src="Practica2-one_mean_files/figure-html/unnamed-chunk-28-1.png" width="80%" style="display: block; margin: auto;" /></p>
 <p>Pasamos ahora a explicar cómo se construye e interpreta el diagrama de caja y bigotes que hemos dibujado.</p>
 <div id="caja" class="section level3" number="2.6.1">
 <h3><span class="header-section-number">2.6.1</span> Caja</h3>
@@ -220,7 +220,7 @@ Publicado con <a style="display:inline;padding:0px;" href="https://pages.github.
 <h3><span class="header-section-number">2.6.2</span> Bigotes y outliers</h3>
 <p>Queda por explicar qué significan los <strong>“bigotes”</strong>, que son las líneas verticales por encima y debajo de la caja central, y por qué aparece resaltado un valor por debajo del bigote inferior.</p>
 <p>El propósito de los bigotes es resaltar los datos extremos, muy pequeños, o muy grandes, que se denominan <strong>outliers</strong>. Datos por debajo del bigote inferior son catalogados como outliers por ser atípicamente pequeños, y datos por encima del bigote superior son considerados outliers por atípicamente grandes. Vemos que en nuestra muestra ha aparecido un oulier por debajo del bigote inferior, que, mirando la escala del eje <span class="math inline">\(Y\)</span>, vemos que tiene un valor menor que <span class="math inline">\(30\)</span>. Concretamente, se trata del valor mínimo <span class="math inline">\(28.26\)</span> que apareció en primer lugar cuando ordenamos los datos de menor a mayor, y que podemos ver directamente calculando el mínimo:</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="boxplot.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">min</span>(muestra)</span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="boxplot.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">min</span>(mandos<span class="sc">$</span>alcance)</span></code></pre></div>
 <pre class="egitbook-output"><code>[1] 28.26</code></pre>
 <p>Los datos extremos u outliers pueden ser datos erróneos (debidos a errores en las mediciones, en la transcripción de los datos al fichero <span class="math inline">\(\dotsc\)</span>). Pero también pueden ser datos correctos que, aun teniendo poca probabilidad de aparecer, han aparecido por azar en nuestra muestra. Aunque es una práctica frecuente desechar los outliers sistemáticamente, no es en absoluto una práctica recomendable. De hecho los outliers pueden ser lo más interesante de la muestra. La historia más famosa sobre las posibles consecuencias de la eliminación automática de outliers está relacionada con la detección del agujero de ozono. En 1985 se publicó el estudio mostrando que los niveles de ozono en la Antártida habían caído un <span class="math inline">\(10\%\)</span> por debajo de lo normal. Se descubrió entonces que las mediciones inusualmente bajas del nivel de ozono ya habían sido registradas por el satélite Nimbus-7 de la NASA en 1976, pero que dichas mediciones fueron ignoradas al ser procesadas mediante un programa informático que descartaba automáticamente los valores excesivamente pequeños, como si se tratara de errores. De no ser por este tratamiento inadecuado de los outliers, el agujero de ozono podría haberse detectado casi una década antes.</p>
 <p>Veamos cómo se dibujan los bigotes para decidir qué datos son outliers.
@@ -267,7 +267,7 @@ El bigote inferior se extiende hasta el menor dato que no es considerado outlier
 <span id="cb20-17"><a href="boxplot.html#cb20-17" aria-hidden="true" tabindex="-1"></a>) <span class="sc">+</span></span>
 <span id="cb20-18"><a href="boxplot.html#cb20-18" aria-hidden="true" tabindex="-1"></a><span class="fu">scale_x_discrete</span>(<span class="at">breaks=</span><span class="cn">NULL</span>) <span class="sc">+</span></span>
 <span id="cb20-19"><a href="boxplot.html#cb20-19" aria-hidden="true" tabindex="-1"></a><span class="fu">coord_flip</span>()  </span></code></pre></div>
-<p><img src="Practica2-one_mean_files/figure-html/unnamed-chunk-32-1.png" width="80%" style="display: block; margin: auto;" /></p>
+<p><img src="Practica2-one_mean_files/figure-html/unnamed-chunk-31-1.png" width="80%" style="display: block; margin: auto;" /></p>
 
 </div>
 </div>

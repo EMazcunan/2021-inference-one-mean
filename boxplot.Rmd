@@ -34,7 +34,7 @@ Queda por explicar qué significan los **"bigotes"**, que son las líneas vertic
 El propósito de los bigotes es resaltar los datos extremos, muy pequeños, o muy grandes, que se denominan **outliers**. Datos por debajo del bigote inferior son catalogados como outliers por ser atípicamente pequeños, y datos por encima del bigote superior son considerados outliers por  atípicamente grandes. Vemos que en nuestra muestra ha aparecido un oulier por debajo del bigote inferior, que, mirando la escala del eje $Y$, vemos que tiene un valor menor que $30$. Concretamente, se trata del valor mínimo $`r sorted[1]`$ que apareció en primer lugar cuando ordenamos los datos de menor a mayor, y que podemos ver directamente calculando el mínimo:
 
 ```{r, results='markup'}
-min(muestra)
+min(mandos$alcance)
 ```
 
 

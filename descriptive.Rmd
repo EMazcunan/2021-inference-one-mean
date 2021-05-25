@@ -20,9 +20,6 @@ Como punto de partida de nuestro estudio, realizaremos un análisis exploratorio
 
 ```{r, child='summarize.Rmd'}
 ```
-```{r, include=FALSE}
-muestra <- mandos$alcance
-```
 
 ```{r, child='histogram.Rmd'}
 ```
