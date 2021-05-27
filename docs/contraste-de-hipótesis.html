@@ -216,7 +216,7 @@ datos es la media muestral
 \]</span></p>
 <p>Como ya sabemos, la hipótesis <span class="math inline">\(H_0\)</span> se denomina hipótesis nula y la hipótesis <span class="math inline">\(H_1\)</span> hipótesis alternativa.</p>
 <p>Conocemos la función <code>binom.test</code> para calcular el <span class="math inline">\(p\)</span>-valor asociado a un contraste de hipótesis para una proporción.
-La función de <code>r</code>R()<code>que usaremos ahora para resolver nuestro contraste de hipótesis sobre una media y calcular  el $p$-valor asociado es</code>t.test`. Concretamente, tenemos que ejecutar el siguiente código:</p>
+La función de <span class="textsf">R</span> que usaremos ahora para resolver nuestro contraste de hipótesis sobre una media y calcular el <span class="math inline">\(p\)</span>-valor asociado es <code>t.test</code>. Concretamente, tenemos que ejecutar el siguiente código:</p>
 <div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="contraste-de-hipótesis.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(</span>
 <span id="cb21-2"><a href="contraste-de-hipótesis.html#cb21-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> mandos<span class="sc">$</span>alcance,</span>
 <span id="cb21-3"><a href="contraste-de-hipótesis.html#cb21-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">mu =</span> <span class="dv">50</span>,</span>
